@@ -1,0 +1,47 @@
+{
+  "name": "dollar-hours",
+  "version": "0.3.0",
+  "description": "Explainable ROI forecasting for architecture selection, denominated in Dollar-Hours ($h).",
+  "author": "John McSwain <john.i.mcswain@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/src/index.js",
+  "types": "./dist/src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/src/index.d.ts",
+      "import": "./dist/src/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "architecture",
+    "decision-analysis",
+    "monte-carlo",
+    "sensitivity-analysis",
+    "explainability",
+    "systems-engineering",
+    "technical-debt"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "example": "tsc && node dist/examples/migration.js"
+  },
+  "devDependencies": {
+    "@types/node": "^26.4.0",
+    "fast-check": "^4.9.0",
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.11"
+  }
+}
